@@ -1,0 +1,79 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<title>DJ Maths</title>
+</head>
+<body>
+<div id="fm1">
+<h1>To Find A Total Discount</h1>
+<form action="tper.php" method="post">
+<p>Enter total price 
+  <input type="rate" name="price" placeholder="enter total price"/>
+</p>
+<p><br />
+  Enter discount price                        
+    <input type="rate" name="discount" placeholder="enter discount amount" />
+  <br />
+</p>
+<button>Submit</button>
+</form>
+</div>
+<div id="fm2">
+<h1>To Find A Discount Price</h1>
+<form action="disprice.php" method="post">
+<p>Enter total price 
+<input type="rate"  name="price" placeholder="enter total price"/>
+ </p>
+<p><br />
+  Enter discount percentage                        
+    <input type="rate" name="dis_per" placeholder="enter discount percentage" />
+  <br />
+</p>
+<button>Submit</button>
+</form>
+</div>
+
+<div id="fm3">
+<h1>To Find Total Price</h1>
+<form action="totprice.php" method="post">
+<p>Enter discount price
+  <input type="rate" name="discount" placeholder="enter total price"/>
+</p>
+<p><br />
+  Enter discount percentage                        
+    <input type="rate" name="dis_per" placeholder="enter discount amount" />
+  <br />
+</p>
+<button>Submit</button>
+</form>
+</div>
+</body>
+</html>
+<style>
+#fm1,#fm2,#fm3{
+width:450px;
+height:200px;
+border:double;
+border-color: #66FFFF;}
+p{
+font:Geneva, Arial, Helvetica, sans-serif;
+color: #FF0099;
+}
+input[name=price]
+{
+margin-left:25px;
+}
+button
+{
+margin-left:250px;
+background-color:#66FF33;
+}
+h1
+{
+color: #660000;
+}
+.1{
+margin-left:30px;
+}
+</style>
