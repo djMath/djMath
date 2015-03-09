@@ -6,13 +6,31 @@
 	<title>djMath - A Math Library</title>	
 </head>
 <body>
-	
+	<div  id="display">
+		
+	</div>
 </body>
 </html>
+<style type="text/css">
+	div{
+		width:800px;
+		margin: 0 auto;
+		height: 490px;
+		overflow-y:scroll;
+		border: 2px solid #000;
+	}
+</style>
 <script src="djMath.js" type="text/javascript" charset="utf-8"></script>
 <script type="text/javascript">
-console.log(djMath.pOfShares(100,10));
-console.log(djMath.pOfDiscount(7000,1000));
-console.log(djMath.totalAmount(1000,14.28));
-console.log(djMath.discountAmount(70,14.28));
+function log(data){
+	var oldData = document.getElementById('display').innerHTML;
+	document.getElementById('display').innerHTML = oldData + '<br/>' + data;
+}
+
+
+log(djMath.pOfShares(100,10));
+log(djMath.pOfDiscount(7000,1000));
+log(djMath.totalAmount(1000,14.28));
+log(djMath.discountAmount(70,14.28));
+
 </script>
